@@ -22,7 +22,7 @@ html,body{
   background: #fff;
   padding: 30px;
   border-radius: 5px;
-  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  box-shadow: 0px 15px 20px rgba(76, 50, 106, 0.459);
 }
 .wrapper .title-text{
   display: flex;
@@ -159,6 +159,7 @@ form .btn .btn-layer{
   width: 300%;
   position: absolute;
   left: -100%;
+  margin-top: 10px;
   background: -webkit-linear-gradient(right, #92A4F9, #DFE3FA);
   border-radius: 5px;
   transition: all 0.4s ease;;
