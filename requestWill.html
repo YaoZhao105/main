@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css\requestWill.css">
+  <title>Last Will Form</title>
+</head>
+
+<body>
+  <div class="testbox" id="finaltemplate">
+    <form >
+      <div class="banner">
+        
+        <h3 style="color: whitesmoke;">Last Will and Testament Form</h3>
+        <h1 >Request a Testament</h1>
+      </div>
+      <br />
+      
+      <!-- Children Field-->
+      <fieldset>
+        <legend>Generl Information</legend>
+
+        <div class="colums" id="chinfo">
+
+          <div class="item" >
+            <label  for="cfname" >The last will for<span>*</span></label>
+            <input id="cfname" type="text" name="cfname" placeholder="Personal | Someone else" required />
+          </div>
+
+          <div class="item">
+            <label for="tchild">The number of Childrens</label>
+            <input type="Number"  id="tchild" min="0"  />
+          </div>
+          <div class="item">
+            <label for="tbenefic">The number of  Beneficiarie</label>
+            <input type="Number"  min="0" id="tbenefic" />
+          </div>
+          <div class="item">
+            <label for="texeuter">The number of Executors</label>
+            <input type="Number" id="texeuter"  min="0"  />
+          </div>
+          
+          
+        </div>
+        <div id="chdec"></div>
+         
+      </fieldset>
+
+
+      </br>
+
+      <fieldset id="PInfo">
+        <legend>Testator Information</legend>
+        <div class="colums">
+          <div class="item">
+            
+            <label for="fname">First Name<span>*</span></label>
+            <input id="fname" type="text" name="fname" required />
+          </div>
+          <div class="item">
+            <label for="lname"> Last Name<span>*</span></label>
+            <input id="lname" type="text" name="lname" required />
+          </div>
+          <div class="item">
+            <label for="birthday">Date of Birth<span>*</span></label>
+            <input id="birthday" type="date" pattern="[0-9]*" name="birthday" required />
+          </div>
+
+          <div class="item">
+            <label for=" Maritalstatus">Current Marital status</label>
+            <input id=" Maritalstatus" type="text" name=" Maritalstatus" />
+          </div>
+          <div class="item">
+            <label for="Email">Government ID Number</label>
+            <input id="idnum" type="text" name="ID" />
+          </div>
+          <div class="item">
+            <label for="phone">Phone Number<span>*</span></label>
+            <input id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
+          </div>
+          <div class="item">
+            <label for="saddress">Street Address</label>
+            <input id="saddress" type="text" name="city" />
+          </div>
+          <div class="item">
+            <label for="city">City</label>
+            <input id="city" type="text" name="city" />
+          </div>
+          <div class="item">
+            <label for="zip">Zip/Postal Code</label>
+            <input id="zip" type="text" name="zip" />
+          </div>
+          <div class="item">
+            <label for="country">Country</label>
+            <input id="country" type="text" name="text" />
+          </div>
+
+      </fieldset>
+      <div id="MyDec"></div>
+      <br />
+
+
+
+     
+
+
+      <!--addition information-->
+
+      <fieldset>
+        <legend>Additional Wishes</legend>
+
+        <div class="colums">
+
+          <div class="item">
+            <label for="addwishes" id="addwishes">You may add more Details</label>
+            <label id="adddet"></label>
+            <textarea id="addwishes" rows="4" cols="10"></textarea>
+          </div>
+        </div>
+
+      </fieldset>
+      <br>
+      
+      <div class="btn-block">
+        <button type="button" onclick="requestwill()" id="submitForm" value="submit">submit</button>
+      </div>
+    
+  </div>
+  </form>
+  
+    
+ 
+ <script>
+  function requestwill()
+{
+  alert("Your Testament has been Requested.");
+}
+ </script>
+
+
+
+</body>
+
+</html>
